@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+.playfair { font-family: 'Playfair Display', serif; }
+
+.gold-rule {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4aa47 15%, #f8edd0 50%, #d4aa47 85%, transparent);
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #f3d98a, #c0922f 60%, #916c1f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  .print-area { box-shadow: none !important; border: none !important; }
+  body { background: white !important; }
+}
