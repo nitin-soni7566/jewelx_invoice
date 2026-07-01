@@ -19,6 +19,7 @@ body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
 
 @media print {
   .no-print { display: none !important; }
-  .print-area { box-shadow: none !important; border: none !important; }
+  .print-area { box-shadow: none !important; border: none !important; overflow: visible !important; }
+  .print-area * { overflow: visible !important; }
   body { background: white !important; }
 }
